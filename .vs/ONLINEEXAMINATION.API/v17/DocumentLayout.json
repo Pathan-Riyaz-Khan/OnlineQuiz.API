@@ -1,0 +1,618 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\questionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\questionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\dbmodel\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\dbmodel\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\quizzrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\quizzrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\quizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\quizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\responsemodel\\questionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\responsemodel\\questionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\requestmodel\\questionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\requestmodel\\questionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\responsemodel\\quizzresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\responsemodel\\quizzresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\interface\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\interface\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\requestmodel\\quizzrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\requestmodel\\quizzrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\controllers\\quizzcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:controllers\\quizzcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\interface\\iquizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\interface\\iquizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\interface\\iquizzrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\interface\\iquizzrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\responsemodel\\adminresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\responsemodel\\adminresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\dbmodel\\quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\dbmodel\\quizz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\interface\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\interface\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\responsemodel\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\responsemodel\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\requestmodel\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\requestmodel\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\dbmodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\dbmodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\requestmodel\\adminrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\requestmodel\\adminrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\dbmodel\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\dbmodel\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\dbmodel\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\dbmodel\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\responsemodel\\answerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:models\\responsemodel\\answerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\connectionstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:connectionstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnswerController.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\AnswerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnswerController.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\AnswerController.cs",
+              "RelativeToolTip": "Controllers\\AnswerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:52:25.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\BaseRepository.cs",
+              "RelativeToolTip": "Repositorys\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:43:16.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Question.cs",
+              "RelativeDocumentMoniker": "Models\\DBModel\\Question.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Question.cs",
+              "RelativeToolTip": "Models\\DBModel\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:11:39.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuestionService.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\QuestionService.cs",
+              "RelativeDocumentMoniker": "Services\\QuestionService.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\QuestionService.cs",
+              "RelativeToolTip": "Services\\QuestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:31:46.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\QuestionRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\QuestionRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\QuestionRepository.cs",
+              "RelativeToolTip": "Repositorys\\QuestionRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:33:22.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionController.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "Controllers\\QuestionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T09:30:13.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuizzService.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\QuizzService.cs",
+              "RelativeDocumentMoniker": "Services\\QuizzService.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\QuizzService.cs",
+              "RelativeToolTip": "Services\\QuizzService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:34:33.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuizzRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\QuizzRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\QuizzRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\QuizzRepository.cs",
+              "RelativeToolTip": "Repositorys\\QuizzRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwA0AAADUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T03:50:46.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QuestionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\QuestionRequest.cs",
+              "RelativeDocumentMoniker": "Models\\RequestModel\\QuestionRequest.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\QuestionRequest.cs",
+              "RelativeToolTip": "Models\\RequestModel\\QuestionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:16:02.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QuestionResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\QuestionResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ResponseModel\\QuestionResponse.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\QuestionResponse.cs",
+              "RelativeToolTip": "Models\\ResponseModel\\QuestionResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:19:24.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswEoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:41:44.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QuizzResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\QuizzResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ResponseModel\\QuizzResponse.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\QuizzResponse.cs",
+              "RelativeToolTip": "Models\\ResponseModel\\QuizzResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:19:37.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IQuestionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IQuestionRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\Interface\\IQuestionRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IQuestionRepository.cs",
+              "RelativeToolTip": "Repositorys\\Interface\\IQuestionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T09:43:10.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IQuizzService.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\Interface\\IQuizzService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IQuizzService.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\Interface\\IQuizzService.cs",
+              "RelativeToolTip": "Services\\Interface\\IQuizzService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAhwAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T08:42:05.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "Services\\AdminService.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\AdminService.cs",
+              "RelativeToolTip": "Services\\AdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:23:44.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QuizzRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\QuizzRequest.cs",
+              "RelativeDocumentMoniker": "Models\\RequestModel\\QuizzRequest.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\QuizzRequest.cs",
+              "RelativeToolTip": "Models\\RequestModel\\QuizzRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:16:43.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "QuizzController.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\QuizzController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuizzController.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\QuizzController.cs",
+              "RelativeToolTip": "Controllers\\QuizzController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwEYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T03:41:03.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IQuizzRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IQuizzRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\Interface\\IQuizzRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IQuizzRepository.cs",
+              "RelativeToolTip": "Repositorys\\Interface\\IQuizzRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T03:55:37.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\AdminResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ResponseModel\\AdminResponse.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\AdminResponse.cs",
+              "RelativeToolTip": "Models\\ResponseModel\\AdminResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:18:26.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Quizz.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Quizz.cs",
+              "RelativeDocumentMoniker": "Models\\DBModel\\Quizz.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Quizz.cs",
+              "RelativeToolTip": "Models\\DBModel\\Quizz.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:08:59.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\Interface\\IUserService.cs",
+              "RelativeToolTip": "Services\\Interface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:46:38.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IAdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IAdminRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\Interface\\IAdminRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IAdminRepository.cs",
+              "RelativeToolTip": "Repositorys\\Interface\\IAdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:41:55.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "Repositorys\\Interface\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:45:26.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\UserRepository.cs",
+              "RelativeToolTip": "Repositorys\\UserRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwC4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:43:14.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "Repositorys\\AdminRepository.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\AdminRepository.cs",
+              "RelativeToolTip": "Repositorys\\AdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:39:50.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\UserResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ResponseModel\\UserResponse.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\UserResponse.cs",
+              "RelativeToolTip": "Models\\ResponseModel\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:20:02.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\UserRequest.cs",
+              "RelativeDocumentMoniker": "Models\\RequestModel\\UserRequest.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\UserRequest.cs",
+              "RelativeToolTip": "Models\\RequestModel\\UserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:17:40.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwD0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:39:10.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:40:15.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\User.cs",
+              "RelativeDocumentMoniker": "Models\\DBModel\\User.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\User.cs",
+              "RelativeToolTip": "Models\\DBModel\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:37:40.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AdminRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\AdminRequest.cs",
+              "RelativeDocumentMoniker": "Models\\RequestModel\\AdminRequest.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\RequestModel\\AdminRequest.cs",
+              "RelativeToolTip": "Models\\RequestModel\\AdminRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:34:04.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:45:16.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Admin.cs",
+              "RelativeDocumentMoniker": "Models\\DBModel\\Admin.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Admin.cs",
+              "RelativeToolTip": "Models\\DBModel\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:06:48.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Answer.cs",
+              "RelativeDocumentMoniker": "Models\\DBModel\\Answer.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Answer.cs",
+              "RelativeToolTip": "Models\\DBModel\\Answer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:52:23.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AnswerResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\AnswerResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ResponseModel\\AnswerResponse.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\ResponseModel\\AnswerResponse.cs",
+              "RelativeToolTip": "Models\\ResponseModel\\AnswerResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:18:56.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ConnectionString.cs",
+              "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\ConnectionString.cs",
+              "RelativeDocumentMoniker": "ConnectionString.cs",
+              "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\ConnectionString.cs",
+              "RelativeToolTip": "ConnectionString.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:02:29.404Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
