@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\quizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\quizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\repositorys\\quizzrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:repositorys\\quizzrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\services\\quizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|solutionrelative:services\\quizzservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36858144-DC68-468A-BDA2-74847F8E43CA}|ONLINEEXAMINATION.API.csproj|c:\\users\\riyaz khan\\documents\\riyaz\\onlineexamination.api\\onlineexamination.api\\models\\responsemodel\\questionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -154,11 +154,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AnswerController.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\AnswerController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnswerController.cs",
@@ -166,12 +166,11 @@
               "RelativeToolTip": "Controllers\\AnswerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:52:25.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T12:52:25.702Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\BaseRepository.cs",
               "RelativeDocumentMoniker": "Repositorys\\BaseRepository.cs",
@@ -179,12 +178,11 @@
               "RelativeToolTip": "Repositorys\\BaseRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T14:43:16.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T14:43:16.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Models\\DBModel\\Question.cs",
               "RelativeDocumentMoniker": "Models\\DBModel\\Question.cs",
@@ -192,12 +190,11 @@
               "RelativeToolTip": "Models\\DBModel\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:11:39.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:11:39.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "QuestionService.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\QuestionService.cs",
               "RelativeDocumentMoniker": "Services\\QuestionService.cs",
@@ -205,12 +202,11 @@
               "RelativeToolTip": "Services\\QuestionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:31:46.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T13:31:46.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "QuestionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\QuestionRepository.cs",
               "RelativeDocumentMoniker": "Repositorys\\QuestionRepository.cs",
@@ -218,12 +214,11 @@
               "RelativeToolTip": "Repositorys\\QuestionRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAwwA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:33:22.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T13:33:22.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "QuestionController.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Controllers\\QuestionController.cs",
               "RelativeDocumentMoniker": "Controllers\\QuestionController.cs",
@@ -231,25 +226,24 @@
               "RelativeToolTip": "Controllers\\QuestionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T09:30:13.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T09:30:13.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "QuizzService.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\QuizzService.cs",
               "RelativeDocumentMoniker": "Services\\QuizzService.cs",
               "ToolTip": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Services\\QuizzService.cs",
               "RelativeToolTip": "Services\\QuizzService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwCAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T13:34:33.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "QuizzRepository.cs",
               "DocumentMoniker": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\Repositorys\\QuizzRepository.cs",
               "RelativeDocumentMoniker": "Repositorys\\QuizzRepository.cs",
@@ -257,8 +251,7 @@
               "RelativeToolTip": "Repositorys\\QuizzRepository.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAkwA0AAADUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:50:46.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:50:46.217Z"
             },
             {
               "$type": "Document",
@@ -270,8 +263,7 @@
               "RelativeToolTip": "Models\\RequestModel\\QuestionRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:16:02.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:16:02.434Z"
             },
             {
               "$type": "Document",
@@ -283,8 +275,7 @@
               "RelativeToolTip": "Models\\ResponseModel\\QuestionResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:19:24.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:19:24.179Z"
             },
             {
               "$type": "Document",
@@ -296,8 +287,7 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAswEoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T16:41:44.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T16:41:44.842Z"
             },
             {
               "$type": "Document",
@@ -309,8 +299,7 @@
               "RelativeToolTip": "Models\\ResponseModel\\QuizzResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:19:37.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:19:37.553Z"
             },
             {
               "$type": "Document",
@@ -322,8 +311,7 @@
               "RelativeToolTip": "Repositorys\\Interface\\IQuestionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T09:43:10.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T09:43:10.191Z"
             },
             {
               "$type": "Document",
@@ -335,8 +323,7 @@
               "RelativeToolTip": "Services\\Interface\\IQuizzService.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAhwAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T08:42:05.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T08:42:05.593Z"
             },
             {
               "$type": "Document",
@@ -348,8 +335,7 @@
               "RelativeToolTip": "Services\\AdminService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:23:44.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:23:44.438Z"
             },
             {
               "$type": "Document",
@@ -361,8 +347,7 @@
               "RelativeToolTip": "Models\\RequestModel\\QuizzRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:16:43.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:16:43.641Z"
             },
             {
               "$type": "Document",
@@ -374,8 +359,7 @@
               "RelativeToolTip": "Controllers\\QuizzController.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAgwEYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:41:03.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:41:03.368Z"
             },
             {
               "$type": "Document",
@@ -387,8 +371,7 @@
               "RelativeToolTip": "Repositorys\\Interface\\IQuizzRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:55:37.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:55:37.388Z"
             },
             {
               "$type": "Document",
@@ -400,8 +383,7 @@
               "RelativeToolTip": "Models\\ResponseModel\\AdminResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:18:26.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:18:26.252Z"
             },
             {
               "$type": "Document",
@@ -413,8 +395,7 @@
               "RelativeToolTip": "Models\\DBModel\\Quizz.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:08:59.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:08:59.474Z"
             },
             {
               "$type": "Document",
@@ -558,8 +539,7 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwDYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T13:45:16.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T13:45:16.951Z"
             },
             {
               "$type": "Document",
@@ -583,8 +563,7 @@
               "RelativeToolTip": "Models\\DBModel\\Answer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T14:52:23.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T14:52:23.024Z"
             },
             {
               "$type": "Document",
