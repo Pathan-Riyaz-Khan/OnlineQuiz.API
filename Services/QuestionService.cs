@@ -11,10 +11,16 @@ namespace ONLINEEXAMINATION.API.Services
     {
         private readonly IQuestionRepository _questionRepository;
         private readonly IQuizzRepository _quizzRepository;
-        public QuestionService(IQuestionRepository questionRepository, IQuizzRepository quizzRepository)
+        private readonly IOptionRepository _optionRepository;
+        private readonly IUserRepository _userRepository;
+
+        public QuestionService(IQuestionRepository questionRepository, 
+            IQuizzRepository quizzRepository, IOptionRepository optionRepository, IUserRepository userRepository)
         {
             _questionRepository = questionRepository;
             _quizzRepository = quizzRepository;
+            _optionRepository = optionRepository;
+            _userRepository = userRepository;
         }
 
         public int Create(int QuizId, QuestionRequest request)
@@ -66,20 +72,37 @@ namespace ONLINEEXAMINATION.API.Services
             {
                 throw new ArgumentException("Invalid id");
             }
+
             if (_questionRepository.Get(Id) == null)
             {
                 throw new ArgumentException("Question id not found");
             }
+            
             var question = _questionRepository.GetById(Id);
+            
+            IList<OptionResponse>  options = new List<OptionResponse>();
+            
+            foreach (var option in _optionRepository.Get(question.Id))
+            {
+                options.Add(new OptionResponse()
+                {
+                    Id = option.Id,
+                    Text = option.Text,
+                });
+            }
+            
             return new QuestionResponse()
             {
                 Text = question.Text,
                 QuizId = question.QuizId,
                 CreatedAt = question.CreatedAt,
                 UpdatedAt = question.UpdatedAt,
+                Options = options,
 
             };
         }
+
+        
 
         public void Update(int QuizId, int id, QuestionRequest request)
         {

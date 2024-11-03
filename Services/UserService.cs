@@ -12,10 +12,18 @@ namespace ONLINEEXAMINATION.API.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IQuizzRepository _quizRepository;
-        public UserService(IUserRepository userRepository, IQuizzRepository quizRepository)
+        private readonly IQuestionRepository _questionRepository;
+        private readonly IOptionRepository _optionRepository;
+        private readonly IUserOptionRepository _userOptionRepository;
+        public UserService(IUserRepository userRepository, IQuizzRepository quizRepository,
+            IOptionRepository optionRepository, IQuestionRepository questionRepository, 
+            IUserOptionRepository userOptionRepository)
         {
             _userRepository = userRepository;
             _quizRepository = quizRepository;
+            _questionRepository = questionRepository;
+            _optionRepository = optionRepository;
+            _userOptionRepository = userOptionRepository;
         }
 
         public int Create(UserRequest request)
@@ -60,10 +68,25 @@ namespace ONLINEEXAMINATION.API.Services
             {
                 throw new ArgumentException("Id shouldn't");
             }
+
             var user = _userRepository.GetById(id);
+
             if(user == null)
             {
                 throw new EntryPointNotFoundException("user not Found");
+            }
+
+            IList<QuizzResponse> quizzs = new List<QuizzResponse>();
+            foreach (var quizz in _quizRepository.GetQuizzsByUserId(user.Id))
+            {
+                quizzs.Add(new QuizzResponse()
+                {
+                    Id = quizz.Id,
+                    Title = quizz.Title,
+                    Description = quizz.Description,
+                    StartTime = quizz.StartTime,
+                    EndTime = quizz.EndTime,
+                });
             }
             return new UserResponse()
             {
@@ -71,6 +94,7 @@ namespace ONLINEEXAMINATION.API.Services
                 Name = user.Name,
                 Email = user.Email,
                 Password = user.Password,
+                Quizzs = quizzs,
                 CreatedAt = user.CreatedAt,
                 UpdatedAt = user.UpdatedAt,
             };
@@ -124,6 +148,24 @@ namespace ONLINEEXAMINATION.API.Services
             {
                 throw new ArgumentException("Password shouldn't be null");
             }
+        }
+        public int UserQuestionOption(int id, int questionId, int optionId, int quizId)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Invalid Question Id");
+            }
+            var question = _questionRepository.GetById(questionId);
+            if (question == null)
+            {
+                throw new ArgumentException("Invalid Quiz Id");
+            }
+            var option = _optionRepository.GetById(optionId);
+            if (option == null)
+            {
+                throw new ArgumentException("Invalid User Id");
+            }
+            return _userOptionRepository.UserQuestionOption(id, questionId, optionId, quizId);
         }
 
         //public int CheckUser(LoginDTO user)

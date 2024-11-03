@@ -23,7 +23,7 @@ namespace ONLINEEXAMINATION.API.Controllers
             {
                 return Ok(_quizzService.Get());
             }
-            catch(EntryPointNotFoundException ex)
+            catch (EntryPointNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
@@ -40,7 +40,7 @@ namespace ONLINEEXAMINATION.API.Controllers
             {
                 return Ok(_quizzService.GetById(id));
             }
-            catch(EntryPointNotFoundException ex)
+            catch (EntryPointNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
@@ -52,11 +52,11 @@ namespace ONLINEEXAMINATION.API.Controllers
 
         [HttpGet("admin/{id:int}")]
         public IActionResult GetByAdminId(int AdminId)
-        {   
+        {
             try
             {
                 return Ok(_quizzService.GetByAdminId(AdminId));
-            } catch(EntryPointNotFoundException ex)
+            } catch (EntryPointNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
@@ -70,7 +70,7 @@ namespace ONLINEEXAMINATION.API.Controllers
             {
                 id = _quizzService.Create(quizz);
             }
-            catch(EntryPointNotFoundException ex)
+            catch (EntryPointNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
@@ -107,6 +107,20 @@ namespace ONLINEEXAMINATION.API.Controllers
                 return BadRequest(ex.Message);
             }
             return Ok("Deleted");
+        }
+
+        [HttpPost("{id:int}/attempt")]
+        public IActionResult QuizsAttemptedByUser(int id, [FromBody] UserQuizAttemptRequest userQuizAttempt)
+        {
+            try
+            {
+                _quizzService.QuizsAttemptedByUser(id, userQuizAttempt.userId);
+            }
+            catch (ArgumentException)
+            {
+                return BadRequest($"Could not find {userQuizAttempt.userId}");
+            }
+            return Created("user attempt", userQuizAttempt.userId);
         }
     }
 }

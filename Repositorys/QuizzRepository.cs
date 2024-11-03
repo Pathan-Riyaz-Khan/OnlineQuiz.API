@@ -23,6 +23,7 @@ namespace ONLINEEXAMINATION.API.Repositorys
             parameters.Add("QuizId", id);
             return StoredProcedure("spDeleteQuiz", parameters);
         }
+        
 
         public IList<Quizz> Get()
         {
@@ -40,6 +41,14 @@ namespace ONLINEEXAMINATION.API.Repositorys
         {
             string query = "SELECT * FROM Foundation.Quizzs WHERE Id = @Id";
             return GetById(query, new { Id = id });
+        }
+
+        public IList<Quizz> GetQuizzsByUserId(int userId)
+        {
+            string query = "select Q.* from " +
+                "Foundation.Quizzs Q " +
+                "Inner Join Foundation.UserQuizs UQ on Q.Id = UQ.QuizId Where UQ.UserId = @userId";
+            return Get(query, new {UserId = userId});
         }
 
         public int Update(int adminId, int id, Quizz quizz)

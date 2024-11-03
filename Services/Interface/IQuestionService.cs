@@ -1,4 +1,5 @@
-﻿using ONLINEEXAMINATION.API.Models.RequestModel;
+﻿using ONLINEEXAMINATION.API.Models.DBModel;
+using ONLINEEXAMINATION.API.Models.RequestModel;
 using ONLINEEXAMINATION.API.Models.ResponseModel;
 
 namespace ONLINEEXAMINATION.API.Services.Interface

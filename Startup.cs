@@ -23,13 +23,15 @@ namespace ONLINEEXAMINATION.API
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IQuizzService, QuizzService>();
             services.AddScoped<IQuestionService, QuestionService>();
-            services.AddScoped<IAnswerService, AnswerService>();
+            services.AddScoped<IOptionService, OptionService>();
 
             services.AddScoped<IAdminRepository, AdminRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IQuizzRepository, QuizzRepository>();
             services.AddScoped<IQuestionRepository, QuestionRepository>();
-            services.AddScoped<IAnswerRepository, AnswerRepository>();
+            services.AddScoped<IOptionRepository, OptionRepository>();
+            services.AddScoped<IUserQuizRepository, UserQuizRepository>();
+            services.AddScoped<IUserOptionRepository, UserOptionRepository>();
 
             services.AddCors(options =>
             {

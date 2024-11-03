@@ -10,6 +10,7 @@ namespace ONLINEEXAMINATION.API.Repositorys.Interface
         IList<User> Get();
         User GetById(int id);
         int Create(User user);
+        //IList<User> GetUsersByQuizId(int quizId);
         int Update(int id, User user);
         int Delete(int id);
         //int checkUser(LoginDTO user);

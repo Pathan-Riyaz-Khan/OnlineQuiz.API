@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ONLINEEXAMINATION.API.Models.DBModel;
 using ONLINEEXAMINATION.API.Models.RequestModel;
 using ONLINEEXAMINATION.API.Services.Interface;
 

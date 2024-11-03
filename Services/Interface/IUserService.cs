@@ -9,6 +9,7 @@ namespace ONLINEEXAMINATION.API.Services.Interface
         IList<UserResponse> Get();
         UserResponse GetById(int id);
         int Create(UserRequest request);
+        int UserQuestionOption(int id, int questionId, int optionId, int quizId);
         void Update(int Id, UserRequest request);
         void Delete(int Id);
         //int CheckUser(LoginDTO user);

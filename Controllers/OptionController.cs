@@ -7,20 +7,20 @@ namespace ONLINEEXAMINATION.API.Controllers
 {
     [Route("questions/{questionId}/[controller]")]
     [ApiController]
-    public class AnswerController : ControllerBase
+    public class OptionController : ControllerBase
     {
-        private readonly IAnswerService _answerService;
-        public AnswerController(IAnswerService answerService)
+        private readonly IOptionService _optionService;
+        public OptionController(IOptionService optionService)
         {
-            _answerService = answerService;
+            _optionService = optionService;
         }
 
         [HttpGet]
-        public IActionResult GetAnswerByQuestion(int questionId)
+        public IActionResult GetOptionsByQuestion(int questionId)
         {
             try
             {
-                return Ok(_answerService.Get(questionId));
+                return Ok(_optionService.Get(questionId));
             }
             catch (Exception ex)
             {
@@ -31,10 +31,9 @@ namespace ONLINEEXAMINATION.API.Controllers
         [HttpGet("{id:int}")]
         public IActionResult GetById(int id)
         {
-            AnswerResponse question;
             try
             {
-                return Ok(_answerService.GetById(id));
+                return Ok(_optionService.GetById(id));
             }
             catch (Exception ex)
             {
@@ -43,26 +42,26 @@ namespace ONLINEEXAMINATION.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult addUser(int questionId, [FromBody] AnswerRequest answer)
+        public IActionResult add(int questionId, [FromBody] OptionRequest option)
         {
             int id;
             try
             {
-                id = _answerService.Create(questionId, answer);
+                id = _optionService.Create(questionId, option);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-            return Created("~/answer/" + id, answer);
+            return Created("~/answer/" + id, option);
         }
 
         [HttpPut("{id:int}")]
-        public IActionResult Update(int questionId, int id, [FromBody] AnswerRequest answer)
+        public IActionResult Update(int questionId, int id, [FromBody] OptionRequest option)
         {
             try
             {
-                _answerService.Update(questionId, id, answer);
+                _optionService.Update(questionId, id, option);
             }
             catch (Exception ex)
             {
@@ -76,7 +75,7 @@ namespace ONLINEEXAMINATION.API.Controllers
         {
             try
             {
-                _answerService.Delete(id);
+                _optionService.Delete(id);
             }
             catch (Exception ex)
             {

@@ -34,7 +34,7 @@ namespace ONLINEEXAMINATION.API.Repositorys
 
         public Question GetById(int Id)
         {
-            string query = "SELECT FROM Foundation.Questions WHERE Id = @Id";
+            string query = "SELECT * FROM Foundation.Questions WHERE Id = @Id";
             return GetById(query, new { Id = Id });
         }
 

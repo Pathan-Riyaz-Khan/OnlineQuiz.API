@@ -48,6 +48,12 @@ namespace ONLINEEXAMINATION.API.Repositorys
             return GetById(query, new { Id = id });
         }
 
+        //public IList<User> GetUsersByQuizId(int quizId)
+        //{
+        //    string query = "select * from Foundation.Users U Inner Join Foundation.UserQuizs UQ on U.Id = UQ.UserId where UQ.QuizId = @quizId";
+        //    return Get(query, new {quizId = quizId});
+        //}
+
         public int Update(int id, User user)
         {
             string query = "UPDATE Foundation.Users SET NAME = @NAME, DOB = @DOB, Email = @Email, Password = @Password WHERE Id = @Id";

@@ -31,6 +31,13 @@ namespace ONLINEEXAMINATION.API.Repositorys
                 return connection.QueryFirstOrDefault<T>(query, parameters);
             }
         }
+        public int GetScore(string query, object? parameters = null)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                return connection.QueryFirstOrDefault<int>(query, parameters);
+            }
+        }
         public int Update(string query, object parameters)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))

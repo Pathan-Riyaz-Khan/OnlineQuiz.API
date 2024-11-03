@@ -2,23 +2,30 @@
 using ONLINEEXAMINATION.API.Models.ResponseModel;
 using ONLINEEXAMINATION.API.Repositorys.Interface;
 using ONLINEEXAMINATION.API.Services.Interface;
+using ONLINEEXAMINATION.API.Models.DBModel;
 
 namespace ONLINEEXAMINATION.API.Services
 {
-    public class AnswerService : IAnswerService
+    public class OptionService : IOptionService
     {
-        private readonly IAnswerRepository _answerRepository;
+        private readonly IOptionRepository _optionRepository;
         private readonly IQuestionRepository _QuestionRepository;
-        public AnswerService(IAnswerRepository answerRepository, IQuestionRepository questionRepository)
+        public OptionService(IOptionRepository optionRepository, IQuestionRepository questionRepository)
         {
-            _answerRepository = answerRepository;
+            _optionRepository = optionRepository;
             _QuestionRepository = questionRepository;
         }
 
-        public int Create(int QuestionId, AnswerRequest request)
+        public int Create(int QuestionId, OptionRequest request)
         {
             ValidateAnswers(QuestionId, request);
-            return _answerRepository.Create(QuestionId, request);
+            var option = new Option()
+            {
+                Text = request.Text,
+                IsCorrect = request.IsCorrect,
+                QuestionId = QuestionId,
+            };
+            return _optionRepository.Create(QuestionId, option);
         }
 
         public void Delete(int Id)
@@ -27,44 +34,58 @@ namespace ONLINEEXAMINATION.API.Services
             {
                 throw new ArgumentException("Invalid Id");
             }
-            _answerRepository.Delete(Id);
+            _optionRepository.Delete(Id);
         }
 
-        public IList<AnswerResponse> Get(int QuestionId)
+        public IList<OptionResponse> Get(int QuestionId)
         {
             if(QuestionId <= 0)
             {
                 throw new ArgumentException("Invalid questionId");
             }
-            return _answerRepository.Get(QuestionId);
+            return _optionRepository.Get(QuestionId).Select(option => new OptionResponse() {
+                Id = option.Id,
+                Text = option.Text,
+            }).ToList();
         }
 
-        public AnswerResponse GetById(int Id)
+        public OptionResponse GetById(int Id)
         {
             if(Id <= 0)
             {
                 throw new ArgumentException("Invalid id");
             }
-            return _answerRepository.GetById(Id);
+            var option = _optionRepository.GetById(Id);
+            return new OptionResponse()
+            {
+                Id = option.Id,
+                Text = option.Text,
+            };
         }
 
-        public void Update(int QuestionId, int id, AnswerRequest request)
+        public void Update(int QuestionId, int id, OptionRequest request)
         {
             if(id <= 0)
             {
                 throw new ArgumentException("Invalid id");
             }
             ValidateAnswers(QuestionId, request);
-            _answerRepository.Update(QuestionId, id, request);
+            var option = new Option()
+            {
+                Text = request.Text,
+                IsCorrect = request.IsCorrect,
+                QuestionId = QuestionId,
+            };
+            _optionRepository.Update(QuestionId, id, option);
         }
         
-        private void ValidateAnswers(int QuestionId, AnswerRequest request)
+        private void ValidateAnswers(int QuestionId, OptionRequest request)
         {
             if(request == null)
             {
                 throw new ArgumentNullException("Invalid object");
             }
-            if(string.IsNullOrEmpty(request.AnswerText))
+            if(string.IsNullOrEmpty(request.Text))
             {
                 throw new ArgumentException("AnswerText shouldn't be null");
             }
