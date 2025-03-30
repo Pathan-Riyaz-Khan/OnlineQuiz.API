@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using ONLINEEXAMINATION.API.Models.DBModel;
 using ONLINEEXAMINATION.API.Repositorys.Interface;
+using System.Data;
 
 namespace ONLINEEXAMINATION.API.Repositorys
 {
@@ -9,10 +10,28 @@ namespace ONLINEEXAMINATION.API.Repositorys
     {
         public QuizzRepository(IOptions<ConnectionString> connectionString)
             :base(connectionString.Value.OEDB){ }
+
+        public int CheckQuizCredintals(int Id, string Password)
+        {
+            string query = "Select Id from Foundation.Quizzs where Id = @Id and Password = @Password";
+            return GetScore(query, new {Id =  Id,Password =  Password });
+        }
+
         public int Create(Quizz quizz)
         {
-            string query = "INSERT INTO Foundation.Quizzs (Title, Description, AdminId, StartTime, EndTime, Password, CreatedAt, UpdatedAt) VALUES (@Title, @Description, @AdminId, @StartTime, @EndTime, @Password, @CreatedAt, @UpdatedAt)";
-            return Create(query, quizz);
+            DynamicParameters dynamicParameters = new DynamicParameters();
+            dynamicParameters.Add("Title",quizz.Title);
+            dynamicParameters.Add("Description", quizz.Description);
+            dynamicParameters.Add("CreatedAt", quizz.CreatedAt);
+            dynamicParameters.Add("UpdatedAt", quizz.UpdatedAt);
+            dynamicParameters.Add("StartTime", quizz.StartTime);
+            dynamicParameters.Add("EndTime", quizz.EndTime);
+            dynamicParameters.Add("Password", quizz.Password);
+            dynamicParameters.Add("AdminId", quizz.AdminId);
+            dynamicParameters.Add("Id", dbType: DbType.Int32, direction: ParameterDirection.Output);
+            StoredProcedure("insertQuizz", dynamicParameters);
+            return dynamicParameters.Get<int>("Id");
+
         }
 
         public int Delete(int id)
@@ -51,7 +70,7 @@ namespace ONLINEEXAMINATION.API.Repositorys
             return Get(query, new {UserId = userId});
         }
 
-        public int Update(int adminId, int id, Quizz quizz)
+        public int Update(int id, Quizz quizz)
         {
             string query = "UPDATE Foundation.Quizzs SET Title = @Title, Descriptions = @Descriptions, AdminId = @AdminId, StartTime = @StartTime, EndTime = @EndTime";
             return Update(query, quizz);

@@ -31,6 +31,23 @@ namespace ONLINEEXAMINATION.API.Controllers
             }
         }
 
+        [HttpGet("GetQuiz")]
+        public IActionResult GetQuizForUser([FromQuery] int Id, [FromQuery] string Password)
+        {
+            try
+            {
+                return Ok(_userService.GetQuizForUser(Id, Password));
+            }
+            catch (EntryPointNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpGet("{id:int}")]
         public IActionResult Get(int id)
         {
@@ -49,18 +66,19 @@ namespace ONLINEEXAMINATION.API.Controllers
             
         }
 
-        //[HttpPost("login")]
-        //public IActionResult Get([FromBody] LoginDTO userLogin)
-        //{
-        //    try
-        //    {
-        //        return Ok(_userService.CheckUser(userLogin));
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return NotFound(ex.Message);
-        //    }
-        //}
+        [HttpPost("auth")]
+        public IActionResult Get([FromBody] LoginDTO userLogin)
+        {
+            try
+            {
+                _userService.CheckUser(userLogin);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
         [HttpPost]
         public IActionResult Add([FromBody] UserRequest user)
         {
@@ -88,6 +106,20 @@ namespace ONLINEEXAMINATION.API.Controllers
                 return BadRequest(ex.Message);
             }
             return Created("~/user/" + id, userOption);
+        }
+
+        [HttpGet("{id:int}/UserOption")]
+
+        public IActionResult GetUserQuestionOption(int id, [FromQuery] int quizId)
+        {
+            try
+            {
+                return Ok(_userService.GetUserQuestionOption(id, quizId));
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut("{id:int}")]

@@ -51,24 +51,27 @@ namespace ONLINEEXAMINATION.API.Controllers
         }
 
         [HttpGet("admin/{id:int}")]
-        public IActionResult GetByAdminId(int AdminId)
+        public IActionResult GetByAdminId(int id)
         {
             try
             {
-                return Ok(_quizzService.GetByAdminId(AdminId));
+                return Ok(_quizzService.GetByAdminId(id));
             } catch (EntryPointNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
         }
 
+        
+
         [HttpPost]
         public IActionResult Add([FromBody] QuizzRequest quizz)
-        {
+            {
             int id;
             try
             {
                 id = _quizzService.Create(quizz);
+                return Ok(id);
             }
             catch (EntryPointNotFoundException ex)
             {
@@ -78,15 +81,14 @@ namespace ONLINEEXAMINATION.API.Controllers
             {
                 return BadRequest(ex.Message);
             }
-            return Created("~/quizz/" + id, quizz);
         }
 
         [HttpPut("{id:int}")]
-        public IActionResult Update(int AdminId, int id, [FromBody] QuizzRequest quizz)
+        public IActionResult Update(int id, [FromBody] QuizzRequest quizz)
         {
             try
             {
-                _quizzService.Update(AdminId, id, quizz);
+                _quizzService.Update(id, quizz);
             }
             catch (ArgumentException ex)
             {

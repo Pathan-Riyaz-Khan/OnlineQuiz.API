@@ -6,7 +6,9 @@ namespace ONLINEEXAMINATION.API.Models.ResponseModel
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public AdminResponse Admin { get; set; }
+        public string Password { get; set; }
+        public int QuestionCount { get; set; }
+        public int Accuracy { get; set; }
         public IList<UserQuizResponse> Users { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

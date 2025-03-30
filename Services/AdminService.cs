@@ -1,4 +1,5 @@
 ﻿using ONLINEEXAMINATION.API.Models.DBModel;
+using ONLINEEXAMINATION.API.Models.DTO;
 using ONLINEEXAMINATION.API.Models.RequestModel;
 using ONLINEEXAMINATION.API.Models.ResponseModel;
 using ONLINEEXAMINATION.API.Repositorys.Interface;
@@ -68,6 +69,27 @@ namespace ONLINEEXAMINATION.API.Services
                 CreatedDate = admin.CreatedAt,
                 UpdatedDate = admin.UpdatedAt,
             };
+        }
+
+        public void Login(LoginDTO loginDTO)
+        {
+            if(loginDTO ==  null)
+            {
+                throw new ArgumentException("object should not be null");
+            }
+            if (string.IsNullOrEmpty(loginDTO.Email))
+            {
+                throw new ArgumentException("Email shouldnt be null");
+            }
+            if (string.IsNullOrEmpty(loginDTO.Password))
+            {
+                throw new ArgumentException("Password shouldnt be null");
+            }
+            int id = _adminRepository.AuthCheck(loginDTO);
+            if(id <= 0)
+            {
+                throw new EntryPointNotFoundException("Login not Found");
+            }
         }
 
         public void Update(int Id, AdminRequest request)

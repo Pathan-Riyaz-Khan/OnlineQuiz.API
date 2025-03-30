@@ -4,6 +4,7 @@ using ONLINEEXAMINATION.API.Models.DBModel;
 using ONLINEEXAMINATION.API.Models.RequestModel;
 using ONLINEEXAMINATION.API.Models.ResponseModel;
 using ONLINEEXAMINATION.API.Repositorys.Interface;
+using System.Data;
 
 namespace ONLINEEXAMINATION.API.Repositorys
 {
@@ -11,10 +12,27 @@ namespace ONLINEEXAMINATION.API.Repositorys
     {
         public QuestionRepository(IOptions<ConnectionString> connectionString)
             : base(connectionString.Value.OEDB) { }
-        public int Create(Question question)
+        public int Create(int QuizId, QuestionRequest question)
         {
-            string query = "INSERT INTO Foundation.Questions (Text, QuizId, CreatedAt, UpdatedAt) VALUES (@Text, @QuizId, @CreatedAt, @UpdatedAt)";
-            return Create(query, question);
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("Text", question.Text);
+            parameters.Add("QuizId", QuizId);
+            parameters.Add("CreatedAt", DateTime.UtcNow);
+            parameters.Add("UpdatedAt", DateTime.UtcNow);
+            var optionsTable = new DataTable();
+            optionsTable.Columns.Add("Text", typeof(string));
+            optionsTable.Columns.Add("IsCorrect", typeof(bool));
+
+            foreach (var option in question.Options)
+            {
+                optionsTable.Rows.Add(option.Text, option.IsCorrect);
+            }
+
+            // Pass as Table-Valued Parameter
+            parameters.Add("Options", optionsTable.AsTableValuedParameter("OptionList"));
+            parameters.Add("Id", dbType: DbType.Int32, direction: ParameterDirection.Output);
+            StoredProcedure("spInsertQuestionAndOptions", parameters);
+            return parameters.Get<int>("Id");
         }
 
         public int Delete(int Id)
@@ -38,6 +56,12 @@ namespace ONLINEEXAMINATION.API.Repositorys
             return GetById(query, new { Id = Id });
         }
 
+        public int GetCount(int QuizId)
+        {
+            string query = "SELECT Count(Questions.Id) FROM Foundation.Questions WHERE QuizId = " + QuizId;
+            return GetScore(query, new {QuizId = QuizId});
+        }
+
         //public IList<Question> GetQuestionsByUser(int userId)
         //{
         //    string query = @"SELECT Id, QuestionText, QuizId, QuestionType
@@ -46,10 +70,26 @@ namespace ONLINEEXAMINATION.API.Repositorys
         //    return GetMultiple(query, new { UserId = userId });
         //}
 
-        public int Update(Question question)
+        public int Update(int QuizId, int id, QuestionRequest question)
         {
-            string query = "UPDATE FROM Foundation.Questions SET Text = @Text, QuizId = @QuizId, CreatedAt = @CreatedAt, UpdatedAt = @UpdatedAt";
-            return Update(query,question);
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("Text", question.Text);
+            parameters.Add("QuizId", QuizId);
+            parameters.Add("CreatedAt", DateTime.UtcNow);
+            parameters.Add("UpdatedAt", DateTime.UtcNow);
+            var optionsTable = new DataTable();
+            optionsTable.Columns.Add("Text", typeof(string));
+            optionsTable.Columns.Add("IsCorrect", typeof(bool));
+
+            foreach (var option in question.Options)
+            {
+                optionsTable.Rows.Add(option.Text, option.IsCorrect);
+            }
+
+            // Pass as Table-Valued Parameter
+            parameters.Add("Options", optionsTable.AsTableValuedParameter("OptionList"));
+            parameters.Add("Id", id);
+            return StoredProcedure("spUpdateQuestionAndOptions", parameters);
         }
     }
 }

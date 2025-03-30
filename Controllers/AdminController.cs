@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ONLINEEXAMINATION.API.Models.DTO;
 using ONLINEEXAMINATION.API.Models.RequestModel;
 using ONLINEEXAMINATION.API.Models.ResponseModel;
 using ONLINEEXAMINATION.API.Services.Interface;
@@ -8,6 +9,7 @@ namespace ONLINEEXAMINATION.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Consumes("application/json")]
     public class AdminController : ControllerBase
     {
         private readonly IAdminService _adminService;
@@ -26,6 +28,19 @@ namespace ONLINEEXAMINATION.API.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("auth")]
+        public IActionResult Login([FromBody] LoginDTO loginDTO)
+            {
+            try
+            {
+                _adminService.Login(loginDTO);
+                return Ok();
+            } catch (Exception ex)
+            {
+                return NotFound(ex.Message);
             }
         }
 

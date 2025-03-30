@@ -46,14 +46,14 @@ namespace ONLINEEXAMINATION.API.Controllers
         {
             int id;
             try
-            {
+                {
                 id = _questionService.Create(QuizId, question);
+                return Ok(id);
             }
             catch (ArgumentException ex)
             {
                 return BadRequest(ex.Message);
             }
-            return Created("~/question/" + id, question);
         }
 
         [HttpPatch("{id:int}")]

@@ -65,7 +65,7 @@ namespace ONLINEEXAMINATION.API.Repositorys
             }
         }
         
-        public int Login(string query, object parameters)
+        public int Login(string query, object? parameters= null)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {

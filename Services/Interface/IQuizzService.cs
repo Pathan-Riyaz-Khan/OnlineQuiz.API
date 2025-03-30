@@ -7,10 +7,10 @@ namespace ONLINEEXAMINATION.API.Services.Interface
     {
         IList<QuizzResponse> Get();
         QuizzResponse GetById(int Id);
-        IList<QuizzResponse> GetByAdminId(int AdminId);
+        IList<AdminQuizResponse> GetByAdminId(int AdminId);
         int Create(QuizzRequest quizzRquest);
         int QuizsAttemptedByUser(int id,  int userId);
-        void Update(int AdminId, int id, QuizzRequest quizzRquest);
+        void Update(int id, QuizzRequest quizzRquest);
         void Delete(int id);
     }
 }

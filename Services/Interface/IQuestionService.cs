@@ -11,5 +11,6 @@ namespace ONLINEEXAMINATION.API.Services.Interface
         int Create(int QuizId, QuestionRequest request);
         void Update(int QuizId, int id, QuestionRequest request);
         void Delete(int Id);
+        int GetCount(int QuizId);
     }
 }

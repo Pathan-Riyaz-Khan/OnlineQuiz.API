@@ -14,5 +14,12 @@ namespace ONLINEEXAMINATION.API.Repositorys
                 "VALUES (@userId, @questionId, @optionId, @quizId)";
             return Create(query, new { UserId = userId, QuestionId = questionId, OptionId = optionId, QuizId = quizId});
         }
+
+        public IList<UserOption> GetUserQuestionOptions(int userId, int quizId)
+        {
+            string query = "Select * from Foundation.UserOptions where UserId = @userId and QuizId = @quizId";
+            return Get(query, new { UserId = userId, QuizId = quizId });
+        }
+
     }
 }

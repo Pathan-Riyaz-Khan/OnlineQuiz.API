@@ -1,5 +1,6 @@
 ﻿using ONLINEEXAMINATION.API.Models.RequestModel;
 using ONLINEEXAMINATION.API.Models.DBModel;
+using ONLINEEXAMINATION.API.Models.DTO;
 
 namespace ONLINEEXAMINATION.API.Repositorys.Interface
 {
@@ -9,6 +10,8 @@ namespace ONLINEEXAMINATION.API.Repositorys.Interface
         Admin GetById(int id);
         int Create(Admin adminRequest);
         int Update(int id, Admin adminRequest);
+
+        int AuthCheck(LoginDTO loginRequest);
         int Delete(int id);
     }
 }

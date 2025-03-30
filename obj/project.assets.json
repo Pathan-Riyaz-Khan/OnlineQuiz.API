@@ -507,11 +507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API.csproj",
+      "projectUniqueName": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\SQL\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API.csproj",
       "projectName": "ONLINEEXAMINATION.API",
-      "projectPath": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API.csproj",
+      "projectPath": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\SQL\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API.csproj",
       "packagesPath": "C:\\Users\\Riyaz Khan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\obj\\",
+      "outputPath": "C:\\Users\\Riyaz Khan\\Documents\\Riyaz\\SQL\\ONLINEEXAMINATION.API\\ONLINEEXAMINATION.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Riyaz Khan\\AppData\\Roaming\\NuGet\\NuGet.Config",

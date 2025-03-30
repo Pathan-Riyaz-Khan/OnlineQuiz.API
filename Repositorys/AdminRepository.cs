@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Options;
 using ONLINEEXAMINATION.API.Models.DBModel;
+using ONLINEEXAMINATION.API.Models.DTO;
 using ONLINEEXAMINATION.API.Repositorys.Interface;
 
 namespace ONLINEEXAMINATION.API.Repositorys
@@ -9,6 +10,13 @@ namespace ONLINEEXAMINATION.API.Repositorys
     {
         public AdminRepository(IOptions<ConnectionString> connectionString)
             : base(connectionString.Value.OEDB) { }
+
+        public int AuthCheck(LoginDTO loginDTO)
+        {
+            string query = "select Id from Foundation.Admins where Email = @Email and Password = @Password";
+            return Login(query, loginDTO);
+        }
+
         public int Create(Admin admin)
         {
             string query = @"INSERT INTO Foundation.Admins (

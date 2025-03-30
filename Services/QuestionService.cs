@@ -26,14 +26,8 @@ namespace ONLINEEXAMINATION.API.Services
         public int Create(int QuizId, QuestionRequest request)
         {
             ValidateQuestions(QuizId, request);
-            var question = new Question()
-            {
-                Text = request.Text,
-                QuizId = QuizId,
-                CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now,
-            };
-            return _questionRepository.Create(question);
+            
+            return _questionRepository.Create(QuizId,request);
         }
 
         public void Delete(int Id)
@@ -59,11 +53,31 @@ namespace ONLINEEXAMINATION.API.Services
             {
                 throw new ArgumentException("Question id not found");
             }
-            return _questionRepository.Get(QuizId).Select(question => new QuestionResponse()
+
+            IList<QuestionResponse> Questions = new List<QuestionResponse>();
+            foreach(var question in _questionRepository.Get(QuizId))
             {
-                Text = question.Text,
-                QuizId = question.QuizId
-            }).ToList();
+                IList<OptionResponse> Options = new List<OptionResponse>();
+                IList<Option> optionList =  _optionRepository.Get(question.Id);
+                foreach(var option in optionList)
+                {
+                    Options.Add(new OptionResponse()
+                    {
+                        Id = option.Id,
+                        Text = option.Text,
+                        IsCorrect = option.IsCorrect
+                    });
+                }
+                Questions.Add(new QuestionResponse()
+                {
+                    Id = question.Id,
+                    Text=question.Text,
+                    QuizId = QuizId,
+                    Options = Options
+                });
+            }
+
+            return Questions;
         }
 
         public QuestionResponse GetById(int Id)
@@ -88,11 +102,13 @@ namespace ONLINEEXAMINATION.API.Services
                 {
                     Id = option.Id,
                     Text = option.Text,
+                    IsCorrect = option.IsCorrect,
                 });
             }
             
             return new QuestionResponse()
             {
+                Id = question.Id,
                 Text = question.Text,
                 QuizId = question.QuizId,
                 CreatedAt = question.CreatedAt,
@@ -102,7 +118,10 @@ namespace ONLINEEXAMINATION.API.Services
             };
         }
 
-        
+        public int GetCount(int QuizId)
+        {
+            return _questionRepository.GetCount(QuizId);
+        }
 
         public void Update(int QuizId, int id, QuestionRequest request)
         {
@@ -114,23 +133,10 @@ namespace ONLINEEXAMINATION.API.Services
             {
                 throw new ArgumentException("Question id not found");
             }
-            ValidateQuestions(QuizId, request);
-            var question = _questionRepository.GetById(id);
 
-            if (question == null)
-            {
-                throw new ArgumentException("Not Found");
-            }
-
-            if(!string.IsNullOrEmpty(request.Text))
-            {
-                question.Text = request.Text;
-            }
-            if(request.QuizId > 0)
-            {
-                question.QuizId = request.QuizId;
-            }
-            _questionRepository.Update(question);
+            
+            
+            _questionRepository.Update(QuizId, id, request);
         }
 
         private void ValidateQuestions(int QuizId, QuestionRequest request)

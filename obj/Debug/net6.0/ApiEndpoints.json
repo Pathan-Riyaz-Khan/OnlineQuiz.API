@@ -79,9 +79,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ONLINEEXAMINATION.API.Controllers.AnswerController",
-    "Method": "GetAnswerByQuestion",
-    "RelativePath": "question/{questionId}/Answer",
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.AdminController",
+    "Method": "Login",
+    "RelativePath": "Admin/auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "ONLINEEXAMINATION.API.Models.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.OptionController",
+    "Method": "GetOptionsByQuestion",
+    "RelativePath": "questions/{questionId}/Option",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -95,9 +111,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ONLINEEXAMINATION.API.Controllers.AnswerController",
-    "Method": "addUser",
-    "RelativePath": "question/{questionId}/Answer",
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.OptionController",
+    "Method": "add",
+    "RelativePath": "questions/{questionId}/Option",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -108,17 +124,17 @@
         "IsRequired": true
       },
       {
-        "Name": "answer",
-        "Type": "ONLINEEXAMINATION.API.Models.RequestModel.AnswerRequest",
+        "Name": "option",
+        "Type": "ONLINEEXAMINATION.API.Models.RequestModel.OptionRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ONLINEEXAMINATION.API.Controllers.AnswerController",
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.OptionController",
     "Method": "GetById",
-    "RelativePath": "question/{questionId}/Answer/{id}",
+    "RelativePath": "questions/{questionId}/Option/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -137,9 +153,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ONLINEEXAMINATION.API.Controllers.AnswerController",
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.OptionController",
     "Method": "Update",
-    "RelativePath": "question/{questionId}/Answer/{id}",
+    "RelativePath": "questions/{questionId}/Option/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -155,17 +171,17 @@
         "IsRequired": true
       },
       {
-        "Name": "answer",
-        "Type": "ONLINEEXAMINATION.API.Models.RequestModel.AnswerRequest",
+        "Name": "option",
+        "Type": "ONLINEEXAMINATION.API.Models.RequestModel.OptionRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ONLINEEXAMINATION.API.Controllers.AnswerController",
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.OptionController",
     "Method": "Delete",
-    "RelativePath": "question/{questionId}/Answer/{id}",
+    "RelativePath": "questions/{questionId}/Option/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -234,11 +250,6 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "AdminId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
@@ -268,9 +279,46 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuizzController",
+    "Method": "QuizsAttemptedByUser",
+    "RelativePath": "Quizz/{id}/attempt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userQuizAttempt",
+        "Type": "ONLINEEXAMINATION.API.Models.RequestModel.UserQuizAttemptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuizzController",
+    "Method": "GetByAdminId",
+    "RelativePath": "Quizz/admin/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuestionController",
     "Method": "Get",
-    "RelativePath": "quizz/{QuizId}/Question",
+    "RelativePath": "quizzes/{QuizId}/Question",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -286,7 +334,7 @@
   {
     "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuestionController",
     "Method": "Add",
-    "RelativePath": "quizz/{QuizId}/Question",
+    "RelativePath": "quizzes/{QuizId}/Question",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -307,7 +355,7 @@
   {
     "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuestionController",
     "Method": "GetById",
-    "RelativePath": "quizz/{QuizId}/Question/{id}",
+    "RelativePath": "quizzes/{QuizId}/Question/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -328,7 +376,7 @@
   {
     "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuestionController",
     "Method": "Update",
-    "RelativePath": "quizz/{QuizId}/Question/{id}",
+    "RelativePath": "quizzes/{QuizId}/Question/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -354,7 +402,7 @@
   {
     "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuestionController",
     "Method": "Delete",
-    "RelativePath": "quizz/{QuizId}/Question/{id}",
+    "RelativePath": "quizzes/{QuizId}/Question/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -366,27 +414,6 @@
       },
       {
         "Name": "QuizId",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ONLINEEXAMINATION.API.Controllers.QuizzController",
-    "Method": "GetByAdminId",
-    "RelativePath": "Quizz/admin/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "AdminId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "id",
         "Type": "",
         "IsRequired": true
       }
@@ -468,6 +495,85 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.UserController",
+    "Method": "UserQuestionOption",
+    "RelativePath": "User/{id}/UserOption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userOption",
+        "Type": "ONLINEEXAMINATION.API.Models.RequestModel.UserOptionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.UserController",
+    "Method": "GetUserQuestionOption",
+    "RelativePath": "User/{id}/UserOption",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "quizId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.UserController",
+    "Method": "Get",
+    "RelativePath": "User/auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogin",
+        "Type": "ONLINEEXAMINATION.API.Models.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ONLINEEXAMINATION.API.Controllers.UserController",
+    "Method": "GetQuizForUser",
+    "RelativePath": "User/GetQuiz",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

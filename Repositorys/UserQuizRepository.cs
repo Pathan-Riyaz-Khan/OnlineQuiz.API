@@ -32,9 +32,10 @@ namespace ONLINEEXAMINATION.API.Repositorys
             return Create(query, new { UserId = userId, QuizId = quizId, Score = score});
         }
 
-        //public IList<UserQuiz> GetAllUserQuizzes(int userId)
-        //{
-        //    string query = ""
-        //}
+        public IList<UserQuiz> GetAllUserQuizzes(int userId)
+        {
+            string query = "select QuizId from Foundation.UserQuizs where UserId = @userId";
+            return Get(query, new { UserId = userId });
+        }
     }
 }

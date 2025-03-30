@@ -13,11 +13,11 @@ namespace ONLINEEXAMINATION.API.Repositorys
         public UserRepository(IOptions<ConnectionString> connectionString)
             :base(connectionString.Value.OEDB){ }
 
-        //public int checkUser(LoginDTO user)
-        //{
-        //    string query = "SELECT Id FROM Foundation.Users WHERE Email = @Email and Password = @Password";
-        //    return Login(query, user);
-        //}
+        public int checkUser(LoginDTO user)
+        {
+            string query = "SELECT Id FROM Foundation.Users WHERE Email = @Email and Password = @Password";
+            return Login(query, user);
+        }
 
         public int Create(User user)
         {

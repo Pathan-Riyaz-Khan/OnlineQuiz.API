@@ -9,7 +9,9 @@ namespace ONLINEEXAMINATION.API.Repositorys.Interface
         IList<Quizz> GetByAdminId(int adminId);
         int Create(Quizz quizz);
         IList<Quizz> GetQuizzsByUserId(int userId);
-        int Update(int adminId, int id, Quizz quizz);
+        int Update(int id, Quizz quizz);
+
+        int CheckQuizCredintals(int Id, string Password);
         int Delete(int id);
         //IList<QuizzResponse> GetQuizzsByUser(int userId);
     }

@@ -12,6 +12,9 @@ namespace ONLINEEXAMINATION.API.Services.Interface
         int UserQuestionOption(int id, int questionId, int optionId, int quizId);
         void Update(int Id, UserRequest request);
         void Delete(int Id);
+        void CheckUser(LoginDTO userLogin);
+        int GetQuizForUser(int Id, string Password);
+        IList<UserQuestionResponse> GetUserQuestionOption(int id, int quizId);
         //int CheckUser(LoginDTO user);
     }
 }

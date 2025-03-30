@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ONLINEEXAMINATION.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+840cdcaca60e84153485c47f6a21d54dfb5bf836")]
 [assembly: System.Reflection.AssemblyProductAttribute("ONLINEEXAMINATION.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ONLINEEXAMINATION.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

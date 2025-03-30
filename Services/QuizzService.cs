@@ -12,12 +12,16 @@ namespace ONLINEEXAMINATION.API.Services
         private readonly IAdminRepository _adminRepository;
         private readonly IUserRepository _userRepository;
         private readonly IUserQuizRepository _userQuizRepository;
-        public QuizzService(IQuizzRepository quizzRepository, IAdminRepository adminRepository, IUserRepository userRepository , IUserQuizRepository userQuizRepository)
+        private readonly IQuestionService _questionService;
+        public QuizzService(IQuizzRepository quizzRepository, IAdminRepository adminRepository, 
+            IUserRepository userRepository , IUserQuizRepository userQuizRepository
+           , IQuestionService questionService)
         {
             _quizzRepository = quizzRepository;
             _adminRepository = adminRepository;
             _userRepository = userRepository;
             _userQuizRepository = userQuizRepository;
+            _questionService = questionService;
         }
 
         public int Create(QuizzRequest quizzRequest)
@@ -85,14 +89,9 @@ namespace ONLINEEXAMINATION.API.Services
                     Id = quizz.Id,
                     Title = quizz.Title,
                     Description = quizz.Description,
+                    Password = quizz.Password,
                     StartTime = quizz.StartTime,
                     EndTime = quizz.EndTime,
-                    Admin = new AdminResponse()
-                    {
-                        Id = admin.Id,
-                        Name = admin.Name,
-                        Email = admin.Email,
-                    },
                     CreatedAt = quizz.CreatedAt,
                     UpdatedAt = quizz.UpdatedAt,
 
@@ -101,22 +100,49 @@ namespace ONLINEEXAMINATION.API.Services
             return quizzes;
         }
 
-        public IList<QuizzResponse> GetByAdminId(int AdminId)
+        public IList<AdminQuizResponse> GetByAdminId(int AdminId)
         {
             if(AdminId <= 0)
             {
                 throw new ArgumentException("AdminId Invalid");
             }
-            return _quizzRepository.GetByAdminId(AdminId).Select(quiz => new QuizzResponse()
+            IList<Quizz> quizzes = _quizzRepository.GetByAdminId(AdminId);
+            IList<AdminQuizResponse> adminQuizzes = new List<AdminQuizResponse>();
+            foreach(var quiz in quizzes)
             {
-                Id = quiz.Id,
-                Title = quiz.Title,
-                Description = quiz.Description,
-                StartTime = quiz.StartTime,
-                EndTime = quiz.EndTime,
-                CreatedAt = quiz.CreatedAt,
-                UpdatedAt = quiz.UpdatedAt,
-            }).ToList();
+                QuizzResponse quizzResponse = GetById(quiz.Id);
+
+                int passedUsers = 0;
+                foreach(var user in quizzResponse.Users)
+                {
+                    int value = (int)(((double)user.Score / quizzResponse.QuestionCount) * 100);
+                    if (value >= 50)
+                    {
+                        passedUsers++;
+                    }
+                }
+
+                int accuracy = 0;
+                if(quizzResponse.Users.Count > 0)
+                    accuracy = (int)(((double)passedUsers / quizzResponse.Users.Count) * 100);
+                adminQuizzes.Add(new AdminQuizResponse()
+                {
+                    Id = quiz.Id,
+                    Title = quiz.Title,
+                    Description = quiz.Description,
+                    Password = quiz.Password,
+                    StartTime = quiz.StartTime,
+                    EndTime = quiz.EndTime,
+                    CreatedAt = quiz.CreatedAt,
+                    Users = quizzResponse.Users,
+                    questionCount = quizzResponse.QuestionCount,
+                    UpdatedAt = quiz.UpdatedAt,
+                    UserCount = quizzResponse.Users.Count,
+                    accuracy = accuracy,
+                });
+            }
+
+            return adminQuizzes;
         }
 
         public QuizzResponse GetById(int Id)
@@ -131,6 +157,8 @@ namespace ONLINEEXAMINATION.API.Services
                 throw new ArgumentException("quizz not found");
             }
             var admin = _adminRepository.GetById(quizz.AdminId);
+            int questionCount = _questionService.GetCount(Id);
+
             IList<UserQuiz> userQuizzes = _userQuizRepository.GetQuizUsers(quizz.Id);
             IList<UserQuizResponse> QuizUsers = new List<UserQuizResponse>();
             foreach(var uq in userQuizzes)
@@ -150,26 +178,18 @@ namespace ONLINEEXAMINATION.API.Services
                 Id = Id,
                 Title = quizz.Title,
                 Description = quizz.Description,
+                QuestionCount = questionCount,
                 StartTime = quizz.StartTime,
                 EndTime = quizz.EndTime,
-                Admin = new AdminResponse()
-                {
-                    Id = admin.Id,
-                    Name = admin.Name,
-                    Email = admin.Email,
-                },
                 Users = QuizUsers,
                 CreatedAt = quizz.CreatedAt,
                 UpdatedAt = quizz.UpdatedAt,
             };
         }
 
-        public void Update(int AdminId, int id, QuizzRequest quizzRequest)
+        public void Update(int id, QuizzRequest quizzRequest)
         {
-            if(AdminId <= 0)
-            {
-                throw new ArgumentException("AdminId should not be less or equal to zero");
-            }
+            
             if(id <= 0)
             {
                 throw new ArgumentException("Quiz id is Invalid");
@@ -179,7 +199,7 @@ namespace ONLINEEXAMINATION.API.Services
                 throw new ArgumentException("quiz should not be empty");
             }
             var quizz = _quizzRepository.GetById(id);
-            _quizzRepository.Update(AdminId, id, quizz);
+            _quizzRepository.Update(id, quizz);
         }
         private void ValidateQuizz(QuizzRequest quizzRequest)
         {

@@ -13,6 +13,6 @@ namespace ONLINEEXAMINATION.API.Repositorys.Interface
         //IList<User> GetUsersByQuizId(int quizId);
         int Update(int id, User user);
         int Delete(int id);
-        //int checkUser(LoginDTO user);
+        int checkUser(LoginDTO user);
     }
 }

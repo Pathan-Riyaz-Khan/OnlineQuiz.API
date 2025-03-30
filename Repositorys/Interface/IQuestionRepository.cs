@@ -8,9 +8,10 @@ namespace ONLINEEXAMINATION.API.Repositorys.Interface
     {
         IList<Question> Get(int QuizId);
         Question GetById(int Id);
-        int Create(Question question);
-        int Update(Question question);
+        int Create(int QuizId, QuestionRequest question);
+        int Update(int QuizId, int id, QuestionRequest question);
         int Delete(int Id);
+        int GetCount(int QuizId);
         //IList<Question> GetQuestionsByUser(int UserId);
     }
 }
